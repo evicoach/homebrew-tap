@@ -6,31 +6,31 @@ cask "castle" do
     end
   end
 
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     on_arm do
-      sha256 "7402713edef93c9e6937d41e4a8309e979248a143ce090337b3ca137b986ed34"
+      sha256 "34c4184a428181f6713c5446f45a4d16f50e4528775a5ce69d31e1723d74b6ea"
       url "https://github.com/evicoach/castle-releases/releases/download/v#{version}/castle_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0d08224d846d6f097bcea2732b6f2cbf899beb34e95ed69e728bd3eb53f34724"
+      sha256 "005114955176f41a3d7dd44ccc4cdaa7899f6ef1ba1ffe37665ae88696f67735"
       url "https://github.com/evicoach/castle-releases/releases/download/v#{version}/castle_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "607a957907dda2e89a4904fd6bbfc235c0fe4c136f96eb00f128f641e186cfe0"
+      sha256 "a5718fc7429060864e7491fe4fae06446f85784f537a616da3ac5c9775a558fb"
       url "https://github.com/evicoach/castle-releases/releases/download/v#{version}/castle_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "899d35cd3e387c27809e970c4f72bf69a708d7026eaf9d719a11405684f9817a"
+      sha256 "793f82037c92486e4adaf51baf57614c6951a7e403319e26c6996e708a2d071e"
       url "https://github.com/evicoach/castle-releases/releases/download/v#{version}/castle_#{version}_linux_amd64.tar.gz"
     end
   end
 
   name "castle"
-  desc "Read the logs of services in secured private AKS environments from your terminal, through Azure Bastion"
+  desc "Read the logs of services in secured environments from your own terminal"
   homepage "https://github.com/evicoach/castle-releases"
 
   livecheck do
